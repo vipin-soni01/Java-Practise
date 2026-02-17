@@ -62,5 +62,7 @@ public class loops {
 
 
         System.out.println("Thanks !!");
+
+        System.out.print("Heelllo");
     }
 }

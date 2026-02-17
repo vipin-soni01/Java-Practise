@@ -1,29 +1,10 @@
-import java.util.*;
-public class weight_conversion {
+
     public static void main(String[] args){
+        // Object - an instance of the class which have attributes and methods. 
 
-        Scanner sc = new Scanner(System.in);
+        Car mycar = new Car();
 
-        System.out.println("Welcome to Weight converter Program: 🫡");
-
-        System.out.println("1:  Convert kgs to pounds \n2: Convert pounds to kgs");
-
-        System.out.print("Enter your choice (1/2): ");
-        int choice = sc.nextInt();
-
-        if(choice == 1){
-            System.out.print("Enter your weight in kgs: ");
-            double kgs = sc.nextDouble();
-            
-            double pound = kgs * 2.20462;
-            System.out.print("Your weight in pounds: "+pound);
-        }
-        else{
-            System.out.print("Enter your weight in pounds: ");
-            double po = sc.nextDouble();
-
-            double con = po / 2.20462;
-            System.out.print("Your weight in kgs: "+con);
-        }
-    }
-}
+        System.out.println(mycar.make);
+        System.out.println(mycar.model);
+        System.out.println(mycar.year);
+        System.out.println(mycar.price);
