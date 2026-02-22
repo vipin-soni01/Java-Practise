@@ -100,28 +100,33 @@
 
 
 // Enum
-import java.util.*;
-enum GameLevel{
-    EASY , MEDIUM , HARD
-}
-public class constructor{
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+// import java.util.*;
+// enum GameLevel{
+//     EASY , MEDIUM , HARD
+// }
+// public class constructor{
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter your Score: ");
-        int score = sc.nextInt();
-        GameLevel level;
+//         System.out.print("Enter your Score: ");
+//         int score = sc.nextInt();
+//         GameLevel level;
 
-        if(score >0 && score <= 50){
-            level = GameLevel.EASY;
-        }
-        else if(score > 50 &&  score <= 75){
-            level = GameLevel.MEDIUM;
-        }
-        else{
-            level = GameLevel.HARD;
-        }
-        System.out.print(level);
-    }
-}
+//         if(score >0 && score <= 50){
+//             level = GameLevel.EASY;
+//         }
+//         else if(score > 50 &&  score <= 75){
+//             level = GameLevel.MEDIUM;
+//         }
+//         else{
+//             level = GameLevel.HARD;
+//         }
+//         System.out.print(level);
+//     }
+// }
 
+
+
+
+
+// 

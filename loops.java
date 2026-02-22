@@ -63,6 +63,9 @@ public class loops {
 
         System.out.println("Thanks !!");
 
-        System.out.print("Heelllo");
+        System.out.println("This is made by Vipin Soni.");
+
+
+        
     }
 }
