@@ -65,7 +65,18 @@ public class loops {
 
         System.out.println("This is made by Vipin Soni.");
 
+        
+        int number = 0;
+        while(number < 1 || number >= 100){
+            System.out.print("Please enter a nnumber between 0 - 100 : ");
+            number = sc.nextInt();
+        }
+        System.out.println(name+", you have entered the number: "+number);
+
+
 
         
+
+  
     }
 }

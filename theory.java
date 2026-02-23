@@ -107,4 +107,68 @@ Benefits of Packages ->
 3. Provides more security using access modifiers.
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+enumeration - It is a special user defined data type which contains small set of fixed values/constants.
+syntax -
+enum EnumName{
+    constant1,
+    constant2,
+    constant3,
+    ...
+}
+
+
+Enum can be also used for the constructor
+The values in the ENUM are always written in uppercase letters to distinguish them from other variables and to indicate that they are constants.
+number of values in Enum class = number of construcotr call
+
+enum Season{
+    WINTER,
+    SPRING,
+    SUMMER,
+    FALL,
+
+    private Season(){
+        System.out.println("Constructor called for: "+this);
+    }
+    public void display(){
+        System.out.println("Season: "+this);
+    }
+}
+public class theory {
+    public static void main(String[] args) {
+        Season s1 = Season.WINTER;
+        System.out.println(s1);
+        s1.display();
+    }
+}
+
+
+
+enum can be also declared inside the class
+
+
+--------- Ways of creating onjects in class- 
+1. Using new keyword
+2. Using factory method (eg: valueOf() method in Enum class)
+3. Using deserialization (converting byte stream to object)
+4. Using clone() method (creating a copy of an existing object)
+5. Using reflection API (creating an object at runtime using the class name)
+6. Using dependies injection (using frameworks like Spring to manage the object creation and dependencies)
+
+
+
+
 */
