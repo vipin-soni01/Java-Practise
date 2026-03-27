@@ -111,3 +111,15 @@ class Nested_CLass{
 
     }
 }
+
+
+
+
+/* Functional Programming in Java ---- is a way intorduced after modern java that enables you to write modular and easy or understandable codes.
+This is being achieved by the combination of FUNCTION INTERFACES +  LAMBDA EXPRESSIONS  (Ananynomus functional way)
+Functional Interface is a speacila type od interface which can have only single abstract method(SAM complex). However, it can have multiple default and static methods
+It is being represented by  @FunctionalInterface Allocaton.
+
+
+Lamba Expression uses the concept of functional interface in the backend to achieve it's functionalities.*/
+
