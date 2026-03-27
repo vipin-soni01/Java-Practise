@@ -84,9 +84,9 @@ class Nested_CLass{
 // It can not further instantiated . And it doesn't have it's constructor.
 // It can use the interface Constructor(Sudo Constructor)
 
-interface A{
-    void makeSound();
-}
+// interface A{
+//     void makeSound();
+// }
 /* 
 class C implements A{
     public void makeSound(){         
@@ -95,22 +95,22 @@ class C implements A{
 }
 */
 
-class Nested_CLass{
-    public static void main(String[] args) {
-        // C obj = new C();
-        // obj.makeSound();
+// class Nested_CLass{
+//     public static void main(String[] args) {
+//         // C obj = new C();
+//         // obj.makeSound();
 
-        A obj = new A(){               // This ( A obj = new A() ) is a anoynomus class.  And the object is the Anoynomus class not of the A class.
-            public void makeSound(){
-                System.err.println("Sound");
-            }
-        };
+//         A obj = new A(){               // This ( A obj = new A() ) is a anoynomus class.  And the object is the Anoynomus class not of the A class.
+//             public void makeSound(){
+//                 System.err.println("Sound");
+//             }
+//         };
 
-        obj.makeSound();
+//         obj.makeSound();
 
 
-    }
-}
+//     }
+// }
 
 
 
@@ -121,5 +121,23 @@ Functional Interface is a speacila type od interface which can have only single 
 It is being represented by  @FunctionalInterface Allocaton.
 
 
-Lamba Expression uses the concept of functional interface in the backend to achieve it's functionalities.*/
+Lamba Expression uses the concept of functional interface in the backend to achieve it's functionalities.
 
+
+
+Built-In Functional Interface----
+1.Runnable  , this exist in (java.lang) -> nethod name - Run()
+2.Predicate  , (java.util.function)*  -> method name - Test()
+3.Function  , (java.util.function)  -> method name - apply()
+4.Comparator  ,  (java.util)   -> method name - compare()
+
+*/
+
+
+
+class Nested_CLass{
+    public static void main(String[] args) {
+        Runnable obj = () -> System.out.println("Hello");
+        obj.run();
+    }
+}
