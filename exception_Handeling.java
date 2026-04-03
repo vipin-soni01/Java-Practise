@@ -33,7 +33,7 @@ example - OutOfMemoryError
 
 
 throw:  throw is a keyword which is being used to throw custom exceptions(user-defined ones).
-throws: it is alse a keyword and it is  used to depict what kind of exception a method can throw.
+throws: it is alse a keyword and it is  used to depict what kind of exception a method can throw. It is mandatory to be written when your method can possibly throw check exceptions and you are not handeling that exception using track edge block inside that method.
 Throwable: Superclass of exception and error in java. 
 
 
@@ -63,24 +63,24 @@ In 3 cases this finally block will not execute  :::::::::
 
 
 
-import java.util.*;
-public class exception_Handeling{
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
+// import java.util.*;
+// public class exception_Handeling{
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
 
-        System.err.println("Enter the values: ");
-        int a = sc.nextInt();
-        int b = sc.nextInt();
+//         System.err.println("Enter the values: ");
+//         int a = sc.nextInt();
+//         int b = sc.nextInt();
 
-        try {
-            System.out.println(a/b);
-        } 
-        catch (ArithmeticException e) {
-            System.out.println("You can not let the b value = 0");
-        }
+//         try {
+//             System.out.println(a/b);
+//         } 
+//         catch (ArithmeticException e) {    /* We can also write Generic Exception like --  catch(exception e) */
+//             System.out.println("You can not let the b value = 0");
+//         }
 
-    }
-}   
+//     }
+// }   
 
 
 
