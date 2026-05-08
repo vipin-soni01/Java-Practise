@@ -92,3 +92,31 @@ class MAin{
         }
     }
 }
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+JDBC -- Java Database Connectivity Is an API (Application programming interface) , provided by Java to make the java application able to interact 
+relationla databases
+
+***Note - It is speacially designed for interacting with relational databases but through some non-native mechansim it can even interact with non-realtional databases as well
+
+
+
+JDBC provides drivers and with the support of classes like -- 
+
+1. DriverManager - it establishes the connection with the database using getConnection() menthod.
+
+2. Collection - it holds the current session in form of its object returned by getConnection() method
+
+3. Statement / Prepared Statement - these classes are being used to create Statemensts for executing the query. 
+                                    Statement class works with simple query(Fixed values). Where as Prepared Statement class works with parameterised classes(Dynamic values)
+                                    (We prefered to use Prepared Statment class over Statement class just because it provide protection from a cyber attack name SQL Injection.)
+
+                                    Statement class has createStatement() method to create the statements and Prepared Statement class has prepareStatement() method 
+
+4. ResultSet - is a class which holds the result returned by database in the form of rows. and we traverse over the data of those rowsto get the exact resut.
+
+
+**** Speacial Note -- All these classes exist in the java.sql pacakage. And most of them come across an exception name SQLException while dealing with JDBC. 
