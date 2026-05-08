@@ -1,0 +1,94 @@
+
+
+in unit 6 there are two parts - 1. Collection (JCF) 2.JDDC
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+JAVA Connection Framework --- ( JCF )
+
+it is a framework provided by java to handel the data structures and their related operations like sorting , searching , etc with flexibility. 
+In other words it provides us a kind of tempelate code for the implementation of the data structures like list, set, queue , etc.
+instead of writing the code for their implementation from the scratch.
+Java Connection contains interfaces and classes for the achieving the functionalities previously mentioned.  
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+There are two families exist in java collection framework - 
+
+1. iterable   
+2. Map
+
+Iterable is the super interface of the collection interface , which eventually gives birth to the 3 sub interfaces ( list , queue , set)
+
+On the other hand , Map interface gives bith to the sub interface name - SortedMap . 
+
+
+To work with data structures he have different classes like arrayList , HashSet , PriorityQueue , HashMap etc are the classes which acquire properties of these interfaces to make the task done. 
+
+
+
+improt java.util.*;
+
+class Main{
+    public static void main(String[] args){
+        Stack<Integer> st = new Stack<>();
+
+        st.push(20);
+        st.push(10);
+        st.push(5);
+
+        System.out.println(st);
+
+        st.pop();
+        System.out.println(st);
+
+        st.pop();
+        System.out.println(st);
+
+
+
+
+
+        ArrayDqeue<Integer> q = new ArrayDeque<Integer>();
+
+        q.offer(50);
+        q.offer(60);
+        q.offer(40);
+        System.out.println(q);
+
+        q.pop();
+        System.out.println(q);
+
+        q.poll();
+        System.out.println(q);
+
+    }
+}
+
+
+
+
+
+
+
+
+class MAin{
+    public static void main(String[] args){
+        int[] nums = {2,5,63,1,2,4};
+
+        HashMap<Integer, Integer> map = new HashMap<>();
+
+        for(int i = 0 ; i < nums.length; i++){
+            if(map.containsKey(nums[i])){
+                int currFreq = map.get(nums[i]);
+                int upFreq = currFreq + 1;
+                map.put(nums[i], upFreq);
+            }
+            else{
+                map.put(nums[i], 1);
+            }
+
+            System.out.println(map);
+
+        }
+    }
+}

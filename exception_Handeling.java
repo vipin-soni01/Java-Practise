@@ -54,6 +54,7 @@ In 3 cases this finally block will not execute  :::::::::
 ---------------------------------------------------------------------
 
 
+Try with Resources ---------  
 
 
 */
@@ -85,4 +86,35 @@ In 3 cases this finally block will not execute  :::::::::
 
 
 /* Rather than user multiple cathch , You should use Multi-Catch 
+*/
+
+
+
+
+/*                                       
+
+
+Utility Classes - are those helper classes which helps us in performing tasks like delaing with data strucutres , string manipulation , date time arithmatics etc.
+
+
+                                                                        Utility classes
+                                                                            |
+                                                                            |
+                                                                            |
+                                                                _____________________________
+                                                                |                            |
+                                                                |                            |
+                                                                |                            |
+                                                                |                            |
+                                                            Legacy Class                    Modern Classes
+                                                            (Old API)                        (Moder API)
+                                                            |                                 |
+                                                            |__java.util.Date                 |__Local Date
+                                                            |                                 |
+                                                            |__java.util.calender             |__Local Time
+                                                                                              |
+                                                                                              |__ Local Datetime
+                                                                                              |
+                                                                                              |__ZonedDateTime
+
 */
